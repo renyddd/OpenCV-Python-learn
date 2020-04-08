@@ -1,5 +1,6 @@
 ## OpenCV-Python
 [Official tutorial.](https://docs.opencv.org/master/d0/de3/tutorial_py_intro.html)
+[中文教程](https://www.kancloud.cn/aollo/aolloopencv/269602)
 
 ### GUI Features
 #### Start with Images

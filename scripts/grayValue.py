@@ -20,6 +20,10 @@ print(gray_img)
 print('the gray shape is:', gray_img.shape)
 print('the gray dimensions:', gray_img.ndim)
 
+# 分离三色
+b, g, r = cv.split(img)
+
+
 # have a try
 # print('note:', img[[0,0],[0,1],[0,1]])
 

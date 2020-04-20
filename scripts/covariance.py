@@ -1,6 +1,6 @@
 import cv2 as cv
 import numpy as np
-# from PIL import Image
+from PIL import Image
 
 lady = 'lady.bmp'
 lena = 'lena.bmp'
@@ -11,9 +11,12 @@ img = cv.imread(ifd)
 img1 = cv.imread(lena)
 img2 = cv.imread(lady)
 
-
 gray_img1 = cv.cvtColor(img1, cv.COLOR_BGR2GRAY) 
 gray_img2 = cv.cvtColor(img2, cv.COLOR_BGR2GRAY) 
+
+# 手动创建灰度图片
+b, g, r = cv.split(img)
+manual_gray = 0.299 * r + 0.587 * g + 0.144 * b
 
 # for x in np.nditer(img):
 #    print(x, end=' ')

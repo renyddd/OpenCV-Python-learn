@@ -91,3 +91,13 @@ grey_img = np.array(img.convert('L'))
 
 print(grey_img)    
 ```
+
+## 灰度直方图 gray scale histogram
+简书上不错的文章：[https://www.jianshu.com/p/bd12c4273d7d](https://www.jianshu.com/p/bd12c4273d7d)
+```python
+cv2.calcHist(images, channels, mask, histSize, ranges[, hist[, accumulate ]])
+
+hist = cv2.calcHist([res],[0],None,[256],[0,255])
+# 参数解释：https://blog.csdn.net/qq_37385726/article/details/82313799
+```
+
